@@ -3,7 +3,7 @@
 function renderCoffee(coffee) {
   var html = '<div class="coffee card">';
   html += "<div class='card-body'>";
-  html += "<h4>" + coffee.name + "</h4>";
+  html += "<h4 class='card-title'>" + coffee.name + "</h4>";
   html += "<p>" + coffee.roast + "</p>";
   html += "<div class='form-check'>";
   html +=

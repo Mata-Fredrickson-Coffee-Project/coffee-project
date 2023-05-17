@@ -1,13 +1,33 @@
+:root {
+    --primary-color: #A07E5F;
+    --secondary-color: #624426;
+    --complement-color: #5F81A0;
+
+
+}
+
 * {
+  color: whitesmoke;
 }
 
 body {
+  background-color: var(--primary-color);
 }
-
+.container {
+    margin: 0;
+    padding: 0;
+}
 #header {
   text-align: center;
 }
+#navbar {
+  background: var(--primary-color);
+  padding: 0;
+}
 
+.title {
+    color: whitesmoke;
+}
 #side-bar-header {
   text-align: right;
 }
@@ -17,4 +37,9 @@ body {
 }
 
 .card {
+  background: var(--secondary-color);
+}
+
+.card-title {
+  color: whitesmoke;
 }
