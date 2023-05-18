@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,14 +19,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bar">
-      <div class="container-fluid d-flex" id="navbar">
-        <h1 class="navbar-brand d-flex justify-content-md-center title" ;>
-          Company Name
+    <nav
+      class="navbar navbar-expand-lg bg-transparent nav-bar justify-content-center"
+    >
+      <div class="container-fluid justify-content-center" id="navbar">
+        <h1 class="display-1 title mx-3 my-2 justify-content-center">
+          Better Bean Co.
         </h1>
 
         <button
           class="navbar-toggler"
+          id="navbar-toggle-button"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -31,9 +40,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Menu</a>
@@ -43,13 +52,14 @@
       </div>
     </nav>
 
-    <nav class="navbar side-bar">
+    <nav class="navbar side-bar" id="sidebar-navbar">
       <div class="container-fluid d-flex justify-content-center">
         <div class="navbar-brand d-flex">
           <h4 class="title">Customize Coffee</h4>
         </div>
         <button
           class="navbar-toggler toggle-buttons"
+          id="side-bar-button"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasDarkNavbar"
@@ -65,7 +75,7 @@
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            <h5 class="offcanvas-title title" id="offcanvasDarkNavbarLabel">
               Make your coffee selection
             </h5>
             <button
@@ -75,13 +85,15 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="container">
+          <div
+            class="container d-flex justify-content-space-between align-items-center"
+          >
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <div class="row">
                   <li class="nav-item">
                     <form>
-                      <label for="coffee-data-list" class="form-label"
+                      <label for="coffee-data-list" class="form-label title"
                         >Choose from our great coffee selection!</label
                       >
 
@@ -95,26 +107,21 @@
                         <option value="San Francisco"></option>
                       </datalist>
 
-                      <label for="roast-selection"></label>
-                      <select class="form-select" id="roast-selection">
+                      <label for="roast-selection-1"></label>
+                      <select class="form-select" id="roast-selection-1">
                         <option selected>Search by roast.</option>
                         <option>Light Roast</option>
                         <option>Medium Roast</option>
                         <option>Dark Roast</option>
+                        <option>All Roasts</option>
                       </select>
-
-                      <input
-                        class="btn btn-primary"
-                        id="submit"
-                        type="submit"
-                      />
                     </form>
                   </li>
                 </div>
-                <div class="row">
+                <div class="row align-bottom">
                   <li class="nav-item">
                     <form>
-                      <label for="custom-coffee-name" class="form-label"
+                      <label for="custom-coffee-name" class="form-label title"
                         >Create your own coffee!</label
                       >
                       <input
@@ -123,13 +130,7 @@
                         id="custom-coffee-name"
                         placeholder="Custom coffee name."
                       />
-                      <datalist id="datalistOptions">
-                        <option value="San Francisco"></option>
-                        <option value="New York"></option>
-                        <option value="Seattle"></option>
-                        <option value="Los Angeles"></option>
-                        <option value="Chicago"></option>
-                      </datalist>
+
                       <label for="custom-roast-selection"></label>
                       <select class="form-select" id="custom-roast-selection">
                         <option selected>Please select your roast.</option>
@@ -139,7 +140,7 @@
                       </select>
 
                       <input
-                        class="btn btn-primary"
+                        class="btn btn-primary my-2"
                         id="submit-custom"
                         type="submit"
                       />

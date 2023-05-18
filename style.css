@@ -7,35 +7,64 @@
 * {
   color: var(--complement-color);
   margin: 0;
+  font-family: Lora;
 }
 
 body {
+  background-image: url("assests/Beans.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
   background-color: var(--primary-color);
   margin: 0;
 }
+
 .container {
   margin: 0;
   padding: 0;
+}
+
+#coffee-display {
+  margin: 0 auto;
 }
 #header {
   text-align: center;
   color: var(--complement-color);
 }
 #navbar {
-  background: var(--primary-color);
   padding: 0;
+  text-align: center;
+}
+
+#navbar-toggle-button {
+  color: var(--secondary-color);
+  background-color: var(--complement-color);
 }
 .nav-bar {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.title {
+.nav-link {
   color: whitesmoke;
 }
 
+.title {
+  color: whitesmoke;
+  font-family: Bebas Neue;
+}
+
+/*#sidebar-navbar {*/
+/*  background-color: var(--primary-color);*/
+/*}*/
+
 .side-bar {
   background-color: var(--secondary-color);
+}
+
+#side-bar-button {
+  color: var(--secondary-color);
+  background-color: var(--complement-color);
 }
 
 .toggle-buttons {
