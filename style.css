@@ -1,9 +1,7 @@
 :root {
-    --primary-color: #A07E5F;
-    --secondary-color: #624426;
-    --complement-color: #5F81A0;
-
-
+  --primary-color: #a07e5f;
+  --secondary-color: #624426;
+  --complement-color: #5f81a0;
 }
 
 * {
@@ -14,11 +12,12 @@ body {
   background-color: var(--primary-color);
 }
 .container {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 #header {
   text-align: center;
+  color: var(--complement-color);
 }
 #navbar {
   background: var(--primary-color);
@@ -26,7 +25,7 @@ body {
 }
 
 .title {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 #side-bar-header {
   text-align: right;
