@@ -15,9 +15,10 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid d-flex" id="navbar">
-        <h1 class="navbar-brand d-flex justify-content-md-center title";
-          >Company Name</h1>
-        
+        <h1 class="navbar-brand d-flex justify-content-md-center title" ;>
+          Company Name
+        </h1>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -38,17 +39,6 @@
               <a class="nav-link" href="#">Menu</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Enter Email for coupons"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Sign Up
-            </button>
-          </form>
         </div>
       </div>
     </nav>
@@ -96,15 +86,23 @@
                         <option>medium</option>
                         <option>dark</option>
                       </select>
-	                    <label for="exampleDataList" class="form-label">Choose from our great coffee selection!</label>
-	                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-	                    <datalist id="datalistOptions">
-		                    <option value="San Francisco">
-		                    <option value="New York">
-		                    <option value="Seattle">
-		                    <option value="Los Angeles">
-		                    <option value="Chicago">
-	                    </datalist>
+                      <label for="exampleDataList" class="form-label"
+                        >Choose from our great coffee selection!</label
+                      >
+                      <input
+                        class="form-control"
+                        list="datalistOptions"
+                        id="exampleDataList"
+                        placeholder="Type to search..."
+                      />
+                      <datalist id="datalistOptions">
+                        <option value="San Francisco"></option>
+                        <option value="New York"></option>
+                        <option value="Seattle"></option>
+                        <option value="Los Angeles"></option>
+                        <option value="Chicago"></option>
+                      </datalist>
+
                       <input id="submit" type="submit" />
                     </form>
                   </li>
@@ -118,15 +116,23 @@
                         <option>medium</option>
                         <option>dark</option>
                       </select>
-	                    <label for="exampleDataList" class="form-label">Create your own coffee!</label>
-	                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-	                    <datalist id="datalistOptions">
-		                    <option value="San Francisco">
-		                    <option value="New York">
-		                    <option value="Seattle">
-		                    <option value="Los Angeles">
-		                    <option value="Chicago">
-	                    </datalist>
+                      <label for="exampleDataList" class="form-label"
+                        >Create your own coffee!</label
+                      >
+                      <input
+                        class="form-control"
+                        list="datalistOptions"
+                        id="exampleDataList"
+                        placeholder="Type to search..."
+                      />
+                      <datalist id="datalistOptions">
+                        <option value="San Francisco"></option>
+                        <option value="New York"></option>
+                        <option value="Seattle"></option>
+                        <option value="Los Angeles"></option>
+                        <option value="Chicago"></option>
+                      </datalist>
+
                       <input id="submit" type="submit" />
                     </form>
                   </li>
@@ -139,7 +145,7 @@
     </nav>
 
     <div
-      class="container d-flex align-items-start flex-wrap"
+      class="container d-flex align-items-center justify-content-center flex-wrap"
       id="coffee-display"
     ></div>
 
