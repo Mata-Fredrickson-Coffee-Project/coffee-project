@@ -18,9 +18,9 @@ let customerReviews = [
     " 'My one stop shop for all my bean needs!' -Peggy J. ",
     " 'You wont find better Beans!' -Donald T.  ",
     " 'So many selections to choose from. -Destiny C.' ",
-    " '4' ",
-    " '5' ",
-    " '6' ",
+    " 'Great customer service. -Cathy L.'",
+    " 'I just love the owners! Always friendly. -Joanna B.' ",
+    " 'Love me some Beans, Beans, Beans!! -BeautyQueen03' ",
     " '7' ",
 ];
 let customerReview = document.querySelector("#customer-reviews");
