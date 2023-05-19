@@ -76,7 +76,7 @@ body {
 }
 
 .top-buffer {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 #coffee-display {
@@ -94,4 +94,36 @@ body {
 .create-button {
   background-color: var(--complement-color);
   color: var(--secondary-color);
+}
+
+.landing-card {
+  color: whitesmoke;
+  width: 60vh;
+  margin-top: 2em;
+  border: 3px solid var(--complement-color);
+  /*background-image: url("assests/bagObeans.jpg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  /*background-position: left center;*/
+}
+
+#card-img {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.landing-card-container {
+  height: 70vh;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2em;
 }

@@ -51,109 +51,32 @@
         </div>
       </div>
     </nav>
-
-    <nav class="navbar side-bar" id="sidebar-navbar">
-      <div class="container-fluid d-flex justify-content-center">
-        <div class="navbar-brand d-flex">
-          <h4 class="title">Customize Coffee</h4>
-        </div>
-        <button
-          class="navbar-toggler toggle-buttons"
-          id="side-bar-button"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end side-bar"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h3 class="offcanvas-title title" id="offcanvasDarkNavbarLabel">
-              Make your coffee selection
-            </h3>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div
-            class="container d-flex justify-content-space-between align-items-center"
-          >
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <div class="row top-buffer">
-                  <li class="nav-item">
-                    <form>
-                      <label for="coffee-data-list" class="form-label title"
-                        >Choose from our great coffee selection!</label
-                      >
-
-                      <input
-                        class="form-control"
-                        id="coffee-data-list"
-                        placeholder="Type to search..."
-                      />
-
-                      <label for="roast-selection-1"></label>
-                      <select class="form-select" id="roast-selection-1">
-                        <option selected>Search by roast.</option>
-                        <option>Light Roast</option>
-                        <option>Medium Roast</option>
-                        <option>Dark Roast</option>
-                        <option>All Roasts</option>
-                      </select>
-                    </form>
-                  </li>
-                </div>
-                <div class="row top-buffer">
-                  <li class="nav-item">
-                    <form>
-                      <label for="custom-coffee-name" class="form-label title"
-                        >Create your own coffee!</label
-                      >
-                      <input
-                        class="form-control"
-                        list="datalistOptions"
-                        id="custom-coffee-name"
-                        placeholder="Custom coffee name."
-                      />
-
-                      <label for="custom-roast-selection"></label>
-                      <select class="form-select" id="custom-roast-selection">
-                        <option selected>Please select your roast.</option>
-                        <option>Light Roast</option>
-                        <option>Medium Roast</option>
-                        <option>Dark Roast</option>
-                      </select>
-
-                      <input
-                        class="btn create-button my-2"
-                        id="submit-custom"
-                        type="submit"
-                      />
-                    </form>
-                  </li>
-                </div>
-              </ul>
-            </div>
-          </div>
+    <div
+      class="card-container d-flex justify-content-center align-content-center landing-card-container"
+    >
+      <div class="card landing-card">
+        <img src="assests/bagObeans.jpg" alt="" id="card-img" />
+        <div class="card-body text-center">
+          <h1 class="card-title title">Better Bean Co.</h1>
+          <h6 class="card-subtitle mb-2 text-body-secondary" id="slogan">
+            "We eat, sleep, and breath Beans!"
+          </h6>
+          <p class="card-text">
+            At Better Bean Co. we pride ourselves in being the worlds foremost
+            resource for all your bean needs. With our staff of highly
+            knowledgeable Bean Masters, you can rest assured all of your bean
+            needs will be met.
+          </p>
         </div>
       </div>
-    </nav>
-
-    <div
-      class="container d-flex align-items-center justify-content-center flex-wrap"
-      id="coffee-display"
-    ></div>
+    </div>
+    <div class="sticky-bottom">
+      <nav class="navbar footer justify-content-center">
+        <div class="container-fluid justify-content-center">
+          <h2 class="navbar-brand title" id="customer-reviews"></h2>
+        </div>
+      </nav>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
