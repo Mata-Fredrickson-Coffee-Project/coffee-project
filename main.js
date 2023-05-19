@@ -54,12 +54,15 @@ function renderCoffees(coffees) {
 
 // -----------------Function for top form to sort Coffee-----------
 
+
 function updateCoffees(e) {
   e.preventDefault(); // don't submit the form, we just want to update the data
   var selectedRoast = roastSelection.value;
   var filteredCoffees = [];
   coffees.forEach(function (coffee) {
     if (coffee.roast === selectedRoast) {
+      filteredCoffees.push(coffee);
+    } else if (selectedRoast === "All Roasts"){
       filteredCoffees.push(coffee);
     }});
 
@@ -139,3 +142,4 @@ let sortedCoffee = coffees.sort((x, y) => {
 });
 
 coffeeDisplay.innerHTML = renderCoffees(sortedCoffee);
+

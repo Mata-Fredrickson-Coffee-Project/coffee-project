@@ -21,7 +21,7 @@ let customerReviews = [
     " 'Great customer service. -Cathy L.'",
     " 'I just love the owners! Always friendly. -Joanna B.' ",
     " 'Love me some Beans, Beans, Beans!! -BeautyQueen03' ",
-    " '7' ",
+    " 'Exceptional beans to brew and delightful coffee to drink! -Alex J.' ",
 ];
 let customerReview = document.querySelector("#customer-reviews");
 
