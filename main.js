@@ -61,8 +61,8 @@ function updateCoffees(e) {
   coffees.forEach(function (coffee) {
     if (coffee.roast === selectedRoast) {
       filteredCoffees.push(coffee);
-    }
-  });
+    }});
+
   coffeeDisplay.innerHTML = renderCoffees(filteredCoffees);
 }
 
@@ -70,7 +70,7 @@ function updateCoffees(e) {
 function displayCoffeeInput() {
   let newArr = [];
   coffees.forEach(function (coffee) {
-    if (coffee.name.startsWith(coffeeInput.value)) {
+    if (coffee.name.toLowerCase().startsWith(coffeeInput.value.toLowerCase())) {
       newArr.push(coffee);
     }
   });
@@ -113,32 +113,7 @@ var coffees = [
   { id: 14, name: "French", roast: "Dark Roast" },
 ];
 
-function reviewCycle() {
-  customerReview.innerHTML = customerReviews[0];
-  let count = 0;
-  let max = customerReviews.length - 1;
-  let interval = 4000;
-  let reviewInterval = setInterval(function () {
-    if (count >= max) {
-      clearInterval(reviewInterval);
-    } else count++;
-    customerReview.innerHTML = customerReviews[count];
-  }, interval);
-}
 
-let customerReviews = [
-  '"Best Beans Ever... Period!" -BeanHound345',
-  " 'My one stop shop for all my bean needs!' -Peggy J. ",
-  " 'You wont find better Beans!' -Donald T.  ",
-  " '3' ",
-  " '4' ",
-  " '5' ",
-  " '6' ",
-  " '7' ",
-];
-let customerReview = document.querySelector("#customer-reviews");
-
-reviewCycle();
 // ----------------selectors and eventListeners-----------------
 
 let coffeeDisplay = document.querySelector("#coffee-display");
@@ -147,9 +122,9 @@ let roastSelection = document.querySelector("#roast-selection-1");
 let customRoastSelection = document.querySelector("#custom-roast-selection");
 let coffeeInput = document.querySelector("#coffee-data-list");
 
-// roastSelection.addEventListener("change", updateCoffees);
-// submitCustomButton.addEventListener("click", addCustomCoffee);
-// coffeeInput.addEventListener("keyup", displayCoffeeInput);
+roastSelection.addEventListener("change", updateCoffees);
+submitCustomButton.addEventListener("click", addCustomCoffee);
+coffeeInput.addEventListener("keyup", displayCoffeeInput);
 
 // --------------------------Function to sort Coffees on load-----------------------
 
@@ -163,4 +138,4 @@ let sortedCoffee = coffees.sort((x, y) => {
   return 0;
 });
 
-// coffeeDisplay.innerHTML = renderCoffees(sortedCoffee);
+coffeeDisplay.innerHTML = renderCoffees(sortedCoffee);
