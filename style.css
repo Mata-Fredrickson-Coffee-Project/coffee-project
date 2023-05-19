@@ -75,6 +75,10 @@ body {
   text-align: right;
 }
 
+.top-buffer {
+  margin-top: 100px;
+}
+
 #coffee-display {
   display: flex;
 }
@@ -85,4 +89,9 @@ body {
 
 .card-title {
   color: whitesmoke;
+}
+
+.create-button {
+  background-color: var(--complement-color);
+  color: var(--secondary-color);
 }

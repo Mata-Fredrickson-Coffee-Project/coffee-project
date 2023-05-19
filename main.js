@@ -66,7 +66,6 @@ function updateCoffees(e) {
   coffeeDisplay.innerHTML = renderCoffees(filteredCoffees);
 }
 
-let coffeeInput = document.querySelector("#coffee-data-list");
 // -------------------Function to Display Typed Coffee ------------------
 function displayCoffeeInput() {
   let newArr = [];
@@ -77,8 +76,6 @@ function displayCoffeeInput() {
   });
   coffeeDisplay.innerHTML = renderCoffees(newArr);
 }
-
-coffeeInput.addEventListener("keyup", displayCoffeeInput);
 
 // ----------------Function to Add Custom Coffee------------------
 
@@ -122,6 +119,13 @@ let coffeeDisplay = document.querySelector("#coffee-display");
 let submitCustomButton = document.querySelector("#submit-custom");
 let roastSelection = document.querySelector("#roast-selection-1");
 let customRoastSelection = document.querySelector("#custom-roast-selection");
+let coffeeInput = document.querySelector("#coffee-data-list");
+
+roastSelection.addEventListener("change", updateCoffees);
+submitCustomButton.addEventListener("click", addCustomCoffee);
+coffeeInput.addEventListener("keyup", displayCoffeeInput);
+
+// --------------------------Function to sort Coffees on load-----------------------
 
 let sortedCoffee = coffees.sort((x, y) => {
   if (x.id > y.id) {
@@ -134,6 +138,3 @@ let sortedCoffee = coffees.sort((x, y) => {
 });
 
 coffeeDisplay.innerHTML = renderCoffees(sortedCoffee);
-
-roastSelection.addEventListener("change", updateCoffees);
-submitCustomButton.addEventListener("click", addCustomCoffee);

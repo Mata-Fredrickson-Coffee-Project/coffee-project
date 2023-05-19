@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Better Bean Co.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,12 +40,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="menu.html">Menu</a>
             </li>
           </ul>
         </div>
@@ -75,9 +75,9 @@
           aria-labelledby="offcanvasDarkNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title title" id="offcanvasDarkNavbarLabel">
+            <h3 class="offcanvas-title title" id="offcanvasDarkNavbarLabel">
               Make your coffee selection
-            </h5>
+            </h3>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -90,7 +90,7 @@
           >
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <div class="row">
+                <div class="row top-buffer">
                   <li class="nav-item">
                     <form>
                       <label for="coffee-data-list" class="form-label title"
@@ -99,13 +99,9 @@
 
                       <input
                         class="form-control"
-                        list="datalistOptions"
                         id="coffee-data-list"
                         placeholder="Type to search..."
                       />
-                      <datalist id="coffee-data-options">
-                        <option value="San Francisco"></option>
-                      </datalist>
 
                       <label for="roast-selection-1"></label>
                       <select class="form-select" id="roast-selection-1">
@@ -118,7 +114,7 @@
                     </form>
                   </li>
                 </div>
-                <div class="row align-bottom">
+                <div class="row top-buffer">
                   <li class="nav-item">
                     <form>
                       <label for="custom-coffee-name" class="form-label title"
@@ -140,7 +136,7 @@
                       </select>
 
                       <input
-                        class="btn btn-primary my-2"
+                        class="btn create-button my-2"
                         id="submit-custom"
                         type="submit"
                       />
