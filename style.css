@@ -115,6 +115,10 @@ body {
   opacity: 0.5;
 }
 
+#slogan {
+  color: var(--complement-color);
+}
+
 .landing-card-container {
   height: 70vh;
 }
