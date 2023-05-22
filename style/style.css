@@ -7,11 +7,11 @@
 * {
   color: var(--complement-color);
   margin: 0;
-  font-family: Lora;
+  font-family: Lora, serif;
 }
 
 body {
-  background-image: url("assests/Beans.png");
+  background-image: url(../assests/Beans.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left top;
@@ -19,14 +19,6 @@ body {
   margin: 0;
 }
 
-.container {
-  margin: 0;
-  padding: 0;
-}
-
-#coffee-display {
-  margin: 0 auto;
-}
 #header {
   text-align: center;
   color: var(--complement-color);
@@ -49,14 +41,19 @@ body {
   color: whitesmoke;
 }
 
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+#coffee-display {
+  margin: 0 auto;
+}
+
 .title {
   color: whitesmoke;
   font-family: Bebas Neue;
 }
-
-/*#sidebar-navbar {*/
-/*  background-color: var(--primary-color);*/
-/*}*/
 
 .side-bar {
   background-color: var(--secondary-color);
@@ -101,10 +98,6 @@ body {
   width: 60vh;
   margin-top: 2em;
   border: 3px solid var(--complement-color);
-  /*background-image: url("assests/bagObeans.jpg");*/
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: fixed;*/
-  /*background-position: left center;*/
 }
 
 #card-img {

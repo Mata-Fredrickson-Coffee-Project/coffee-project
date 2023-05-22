@@ -54,17 +54,17 @@ function renderCoffees(coffees) {
 
 // -----------------Function for top form to sort Coffee-----------
 
-
 function updateCoffees(e) {
   e.preventDefault(); // don't submit the form, we just want to update the data
-  var selectedRoast = roastSelection.value;
-  var filteredCoffees = [];
+  let selectedRoast = roastSelection.value;
+  let filteredCoffees = [];
   coffees.forEach(function (coffee) {
     if (coffee.roast === selectedRoast) {
       filteredCoffees.push(coffee);
-    } else if (selectedRoast === "All Roasts"){
+    } else if (selectedRoast === "All Roasts") {
       filteredCoffees.push(coffee);
-    }});
+    }
+  });
 
   coffeeDisplay.innerHTML = renderCoffees(filteredCoffees);
 }
@@ -93,7 +93,7 @@ function addCustomCoffee(e) {
   };
   coffees.push(customCoffeeObj);
 
-  coffeeDisplay.innerHTML = renderCoffees(coffees);
+  coffeeDisplay.innerHTML = renderCoffees(sortedCoffee);
 }
 
 // -----------------------Array of Coffees-----------------
@@ -115,7 +115,6 @@ var coffees = [
   { id: 13, name: "Italian", roast: "Dark Roast" },
   { id: 14, name: "French", roast: "Dark Roast" },
 ];
-
 
 // ----------------selectors and eventListeners-----------------
 
@@ -142,4 +141,3 @@ let sortedCoffee = coffees.sort((x, y) => {
 });
 
 coffeeDisplay.innerHTML = renderCoffees(sortedCoffee);
-
